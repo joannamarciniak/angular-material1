@@ -1,0 +1,125 @@
+<!-- Search Input -->
+<div class="menu shadow" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxShow="true" fxHide.gt-xs="true">
+<form class = "tp-form">
+   <mat-form-field class = "tp-full-width">
+      <input type = "text" 
+         placeholder = "Search" 
+         aria-label = "Number" 
+         matInput 
+         [formControl] = "myControl" 
+         [matAutocomplete] = "auto">
+      <mat-autocomplete #auto = "matAutocomplete">
+         <mat-option *ngFor = "let state of states" [value] = "state.value">
+            {{state.display}}
+         </mat-option>
+      </mat-autocomplete>
+   </mat-form-field>
+</form>
+<!-- Search Input -->
+
+<!-- Menu Mobile -->
+<button mat-button [matMenuTriggerFor]="menu">Menu <mat-icon>menu</mat-icon></button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Start</button>
+  <button mat-menu-item>About</button>
+  <button mat-menu-item>Categories</button>
+  <button mat-menu-item>Share <mat-icon>share</mat-icon></button>
+</mat-menu>
+<!-- Menu Mobile END -->
+</div>
+
+<!-- Menu -->
+<div class="menu shadow" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center" fxShow="true" fxHide.xs="true">
+	<button mat-button>Start</button>
+  <button mat-button>About</button>
+  <button mat-button>Categories</button>
+  <button mat-button>Share <mat-icon>share</mat-icon></button>
+  <form class = "tp-form">
+   <mat-form-field class = "tp-full-width">
+      <input type = "text" 
+         placeholder = "Search" 
+         aria-label = "Number" 
+         matInput 
+         [formControl] = "myControl" 
+         [matAutocomplete] = "auto">
+      <mat-autocomplete #auto = "matAutocomplete">
+         <mat-option *ngFor = "let state of states" [value] = "state.value">
+            {{state.display}}
+         </mat-option>
+      </mat-autocomplete>
+   </mat-form-field>
+</form>
+</div>
+<!-- Menu END-->
+
+<!-- Cards -->
+<div class="flex-container shadow" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+
+  <mat-card class="child-1" fxFlex="50%">
+  <div class="card_content" fxLayoutAlign='center'>
+  <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>The best product for work</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button><mat-icon>thumb_up_alt</mat-icon> LIKE</button>
+    <button mat-button><mat-icon>share</mat-icon> SHARE</button>
+  </mat-card-actions>
+</mat-card>  
+  </div>
+  </mat-card> 
+
+  <mat-card class="child-2" fxFlex="50%">
+  <div class="card_content" fxLayoutAlign='center'>
+  <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>The best product for work</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button><mat-icon>thumb_up_alt</mat-icon> LIKE</button>
+    <button mat-button><mat-icon>share</mat-icon> SHARE</button>
+  </mat-card-actions>
+</mat-card>  
+  </div>
+  </mat-card> 
+</div>
+<!-- Cards END -->
+
+<!-- Topics -->
+<h3>Topics</h3>
+<div class="topics shadow" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center">
+<mat-chip-list aria-label="Topics">
+  <mat-chip>Our work</mat-chip>
+  <mat-chip>Products</mat-chip>
+  <mat-chip>Shopping</mat-chip>
+  <mat-chip>Store</mat-chip>
+  <mat-chip>New In</mat-chip>
+  <mat-chip>Help & Support</mat-chip>
+</mat-chip-list>
+</div>
+<!-- Topics END -->
+
+<!-- Footer -->
+<div class="footer" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+	<button mat-button>Start</button>
+  <button mat-button>Terms</button>
+  <button mat-button>Customers</button>
+  <button mat-button>Store</button>
+</div>
+<!-- Footer END -->
