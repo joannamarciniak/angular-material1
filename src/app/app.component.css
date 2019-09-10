@@ -21,6 +21,7 @@ h3 {
    min-width: 150px;
    max-width: 200px;
    width: 100%;
+   padding-left: 16px;
 }
 .tp-full-width {
    width: 100%;
