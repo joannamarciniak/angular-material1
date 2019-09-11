@@ -17,13 +17,13 @@ h3 {
 .icon-menu {
   cursor: pointer;
 }
-.tp-form {
+.tp-form1 {
    min-width: 150px;
-   max-width: 200px;
+   max-width: 90%;
    width: 100%;
    padding-left: 16px;
 }
-.tp-full-width {
+.tp-width {
    width: 100%;
 }
 .menu {
@@ -38,7 +38,7 @@ h3 {
 .example-spacer {
   flex: 1 1 auto;
 }
-.example-card {
+.card-width {
   max-width: 400px;
 }
 .mat-card {

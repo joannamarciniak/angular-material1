@@ -1,16 +1,16 @@
 <!-- Search Input -->
-<div class="menu shadow" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxShow="true" fxHide.gt-xs="true">
-<form class = "tp-form">
-   <mat-form-field class = "tp-full-width">
+<div class="menu shadow" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="center" fxShow="true" fxHide.gt-xs="true">
+<form class = "tp-form1">
+   <mat-form-field class = "tp-width">
       <input type = "text" 
          placeholder = "Search" 
-         aria-label = "Number" 
+         aria-label = "Topics" 
          matInput 
          [formControl] = "myControl" 
          [matAutocomplete] = "auto">
       <mat-autocomplete #auto = "matAutocomplete">
-         <mat-option *ngFor = "let state of states" [value] = "state.value">
-            {{state.display}}
+         <mat-option *ngFor = "let topic of topics" [value] = "topic.value">
+            {{topic.display}}
          </mat-option>
       </mat-autocomplete>
    </mat-form-field>
@@ -20,7 +20,7 @@
 <!-- Menu Mobile -->
 <div class="menu_mobile">
 <button mat-button [matMenuTriggerFor]="menu">Menu <mat-icon>menu</mat-icon></button>
-<mat-menu #menu="matMenu">
+<mat-menu class="menu-mobile-width" #menu="matMenu">
   <button mat-menu-item>Start</button>
   <button mat-menu-item>About</button>
   <button mat-menu-item>Categories</button>
@@ -36,17 +36,17 @@
   <button mat-button>About</button>
   <button mat-button>Categories</button>
   <button mat-button>Share <mat-icon>share</mat-icon></button>
-  <form class = "tp-form">
-   <mat-form-field class = "tp-full-width">
+  <form class = "tp-form2">
+   <mat-form-field class = "tp2-width">
       <input type = "text" 
          placeholder = "Search" 
-         aria-label = "Number" 
+         aria-label = "Topic" 
          matInput 
          [formControl] = "myControl" 
          [matAutocomplete] = "auto">
       <mat-autocomplete #auto = "matAutocomplete">
-         <mat-option *ngFor = "let state of states" [value] = "state.value">
-            {{state.display}}
+         <mat-option *ngFor = "let topic of topics" [value] = "topic.value">
+            {{topic.display}}
          </mat-option>
       </mat-autocomplete>
    </mat-form-field>
@@ -55,11 +55,11 @@
 <!-- Menu END-->
 
 <!-- Cards -->
-<div class="flex-container shadow" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+<div class="flex-container shadow" fxLayout="row" fxLayout.xs="column" layout-wrap="" fxLayoutAlign="center">
 
-  <mat-card class="child-1" fxFlex="50%">
+  <mat-card fxFlex.gt-sm="30" fxFlex.gt-xs="50" fxFlex="100">
   <div class="card_content" fxLayoutAlign='center'>
-  <mat-card class="example-card">
+  <mat-card class="card-width">
   <mat-card-header>
     <mat-card-title>The best product for work</mat-card-title>
   </mat-card-header>
@@ -77,9 +77,29 @@
   </div>
   </mat-card> 
 
-  <mat-card class="child-2" fxFlex="50%">
+  <mat-card fxFlex.gt-sm="30" fxFlex.gt-xs="50" fxFlex="100">
   <div class="card_content" fxLayoutAlign='center'>
-  <mat-card class="example-card">
+  <mat-card class="card-width">
+  <mat-card-header>
+    <mat-card-title>The best product for work</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button><mat-icon>thumb_up_alt</mat-icon> LIKE</button>
+    <button mat-button><mat-icon>share</mat-icon> SHARE</button>
+  </mat-card-actions>
+</mat-card>  
+  </div>
+  </mat-card>
+
+  <mat-card fxFlex.gt-sm="30" fxFlex.gt-xs="50" fxFlex="100">
+  <div class="card_content" fxLayoutAlign='center'>
+  <mat-card class="card-width">
   <mat-card-header>
     <mat-card-title>The best product for work</mat-card-title>
   </mat-card-header>
@@ -96,6 +116,7 @@
 </mat-card>  
   </div>
   </mat-card> 
+  
 </div>
 <!-- Cards END -->
 

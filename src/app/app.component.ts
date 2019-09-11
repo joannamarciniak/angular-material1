@@ -9,17 +9,17 @@ import { FormControl } from "@angular/forms";
 export class AppComponent  {
   name = 'Angular';
   myControl = new FormControl();
-   states;
+   topics;
    constructor(){
-      this.loadStates();
+      this.loadTopics();
    }
    //build list of states as map of key-value pairs
-   loadStates() {
-      var allStates = 'One, Two, Three';
-      this.states =  allStates.split(/, +/g).map( function (state) {
+   loadTopics() {
+      var allTopics = 'Help & Support, New In, Our work, Products, Shopping, Store';
+      this.topics =  allTopics.split(/, +/g).map( function (topic) {
          return {
-            value: state.toUpperCase(),
-            display: state
+            value: topic.toUpperCase(),
+            display: topic
          };
       });
    }
