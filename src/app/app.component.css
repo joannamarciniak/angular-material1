@@ -4,7 +4,7 @@ p, div {
 h3 {
   font-family: Lato, Arial;
   font-weight: normal;
-  padding-left: 32px;
+  text-align: center;
 }
 .shadow {
   -webkit-box-shadow: 0 8px 6px -6px rgb(121, 119, 119);
@@ -32,6 +32,9 @@ h3 {
 .menu button {
   font-size: 1.125rem;
 }
+.menu_mobile {
+  padding-bottom: 10px;
+}
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -47,5 +50,7 @@ h3 {
 }
 .topics {
   padding-left: 32px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
 }
 
