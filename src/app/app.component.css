@@ -8,11 +8,8 @@ h3 {
 }
 .shadow {
   -webkit-box-shadow: 0 8px 6px -6px rgb(121, 119, 119);
-	   -moz-box-shadow: 0 8px 6px -6px rgb(121, 119, 119);
-	        box-shadow: 0 8px 6px -6px rgb(121, 119, 119);
-}
-.example-icon {
-  padding: 0 14px;
+	-moz-box-shadow: 0 8px 6px -6px rgb(121, 119, 119);
+	box-shadow: 0 8px 6px -6px rgb(121, 119, 119);
 }
 .icon-menu {
   cursor: pointer;
@@ -35,22 +32,16 @@ h3 {
 .menu_mobile {
   padding-bottom: 10px;
 }
-.example-spacer {
-  flex: 1 1 auto;
-}
 .card-width {
   max-width: 400px;
 }
 .mat-card {
   box-shadow: none;
 }
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
 .topics {
   padding-left: 32px;
   padding-bottom: 20px;
   margin-bottom: 15px;
 }
+
 
