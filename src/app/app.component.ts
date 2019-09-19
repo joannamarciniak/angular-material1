@@ -13,12 +13,12 @@ export class AppComponent  {
    constructor(){
       this.loadTopics();
    }
-   //build list of states as map of key-value pairs
+   
    loadTopics() {
       var allTopics = 'Help & Support, New In, Our work, Products, Shopping, Store';
       this.topics =  allTopics.split(/, +/g).map( function (topic) {
          return {
-            value: topic.toUpperCase(),
+            value: topic,
             display: topic
          };
       });
